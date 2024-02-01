@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "900655358000",
+    "project_id": "eat-meat-d35a4",
+    "storage_bucket": "eat-meat-d35a4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:900655358000:android:4e56995f97025dda700df5",
+        "android_client_info": {
+          "package_name": "com.example.eat_meat"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmvXFyv8j3Qxn1oDxp7gFJyI2tSf5X1bg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

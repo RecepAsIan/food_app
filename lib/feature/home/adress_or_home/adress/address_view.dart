@@ -51,7 +51,7 @@ class _AddressViewState extends State<AddressView> with AddressMixin {
                   padding: AppPadding.paddingTopLow,
                   child: MyTextField(
                     controller: neighbourhood,
-                    hintText: 'neighbourhood',
+                    hintText: 'neighborhood',
                   ),
                 ),
                 Padding(

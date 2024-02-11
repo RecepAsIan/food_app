@@ -1,5 +1,6 @@
 import 'package:eat_meat/feature/admin/admin_view/admin_riverpod.dart';
 import 'package:eat_meat/product/widgets/admin/admin_inkwell.dart';
+import 'package:eat_meat/product/widgets/drawer/my_drawer.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -17,6 +18,7 @@ class AdminView extends ConsumerWidget {
           title: const Text('Admin View'),
           centerTitle: true,
         ),
+        drawer: MyDrawer(),
         body: GridView.builder(
           gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: 2,

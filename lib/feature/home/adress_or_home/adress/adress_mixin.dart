@@ -23,19 +23,31 @@ mixin AddressMixin<T extends StatefulWidget> on State<T> {
     required String address,
     required String nameSurname,
   }) {
-    FirebaseFirestore.instance
-        .collection('users')
-        .doc(_userId)
-        .collection('address')
-        .doc(_userId)
-        .set(
-      {
-        "province": province,
-        "district": district,
-        "neighbourhood": neighbourhood,
-        "address": address,
-        "nameSurname": nameSurname
-      },
-    );
+    if (province.isEmpty ||
+        district.isEmpty ||
+        neighbourhood.isEmpty ||
+        address.isEmpty ||
+        nameSurname.isEmpty) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('there is free space'),
+        ),
+      );
+    } else {
+      FirebaseFirestore.instance
+          .collection('users')
+          .doc(_userId)
+          .collection('address')
+          .doc(_userId)
+          .set(
+        {
+          "province": province,
+          "district": district,
+          "neighbourhood": neighbourhood,
+          "address": address,
+          "nameSurname": nameSurname
+        },
+      );
+    }
   }
 }
